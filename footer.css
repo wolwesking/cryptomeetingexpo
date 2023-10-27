@@ -1,0 +1,30 @@
+footer {
+    background: var(--dark, #0A142F);
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer>div {
+    border: 1px solid var(--white, #FFF);
+    border-radius: 20px;
+    opacity: 0.15000000596046448;
+    background: var(--white, #FFF);
+    height: 1.409px;
+    width: 75%;
+}
+
+footer>p {
+    margin-bottom: 0;
+    color: var(--white, #FFF);
+    text-align: center;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}

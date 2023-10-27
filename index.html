@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Meeting Expo</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="topics.css">
+    <link rel="stylesheet" type="text/css" href="speakers.css">
+    <link rel="stylesheet" type="text/css" href="sponsor.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+
+    <link rel="icon" href="./public/images/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Changa:wght@400;700&family=DM+Sans:wght@200;700&family=Poppins:wght@400;900&family=Russo+One&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<style>
+    @font-face {
+        font-family: 'Sansation_Bold';
+        src: url('./public/fonts/Sansation_Bold.ttf') format('truetype');
+    }
+</style>
+
+<body>
+    <div id="home">
+        <nav class="header">
+            <div id="logo">
+                <a href="#">
+                    <img src="./public/images/logo.png" alt="logo">
+                    <p>CryptoExpo</p>
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#speakers">Speakers</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+            </ul>
+            <button class="menu-button" onclick="toggleButton()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#topics">Topics</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+        </ul>
+
+        <div id="title">
+            <h2>25 Setpember 2023, ATLANTIS - The Palm</h2>
+            <h1>Crypto Meeting Expo Dubai</h1>
+            <!--Counter-->
+            <div id="countdown">
+                <div>
+                    <p id="days" class="counter">00</p>
+                    <p class="count-name">Days</p>
+                </div>
+                <div>
+                    <p id="hours" class="counter">00</p>
+                    <p class="count-name">Hours</p>
+                </div>
+                <div>
+                    <p id="minutes" class="counter">00</p>
+                    <p class="count-name">Minutes</p>
+                </div>
+                <div>
+                    <p id="seconds" class="counter">00</p>
+                    <p class="count-name">Seconds</p>
+                </div>
+            </div>
+        </div>
+        <div id="show-more">
+            <p>Show more</p>
+            <a href="#about"><img src="./public/images/arrow.png" alt="arrow"></a>
+        </div>
+    </div>
+    <div id="about">
+        <h1>ABOUT EVENT</h1>
+        <div id="about-container">
+            <div class="about-content"><img src="./public/images/about-1.png" alt="about-1" />
+                <div>
+                    <p>Crypto Coin Expo is the blockchain conference network bringing together the key players of crypto
+                        industry and experts to redefine the future of finance.</p>
+                </div>
+            </div>
+            <div class="about-content"><img src="./public/images/about-2.png" alt="about-2" />
+                <div>
+                    <p>The edition of the Crypto Coin Expo will take place during on September 25, 2023 in Dubai, with
+                        the world’s top crypto companies and blockchain entrepreneurs. Today, UAE, specifically Dubai is
+                        gearing up to become a global crypto hub. </p>
+                </div>
+            </div>
+            <div class="about-content"><img src="./public/images/about-3.png" alt="about-3" />
+                <div>
+                    <p>Crypto Coin Expo will be the gathering in the region on behalf of the world of blockchain and
+                        cryptocurrency, with a wide range of topics focused on the financial technologies of the future,
+                        extensive networking opportunities and participation from more than 40 countries.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="numbersContainer">
+            <div class="numbers">
+                <p id="Visitors" class="count">1000+</p>
+                <p class="classes">Visitors</p>
+            </div>
+            <div class="numbers">
+                <p id='Countries' class="count">40+</p>
+                <p class="classes">Countries</p>
+            </div>
+            <div class="numbers">
+                <p id='Speakers' class="count">12+</p>
+                <p class="classes">Speakers</p>
+            </div>
+            <div class="numbers">
+                <p id='Companies' class="count">10+</p>
+                <p class="classes">Companies</p>
+            </div>
+        </div>
+    </div>
+    <div id="intersection-arrows">
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="164" height="177" viewBox="0 0 164 177" fill="none">
+                <path d="M88.3029 88.3029L0 0H75.5528L163.856 88.3029L75.5528 176.606H0L88.3029 88.3029Z"
+                    fill="#F0810F" />
+
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="164" height="177" viewBox="0 0 164 177" fill="none">
+                <path d="M88.3029 88.3029L0 0H75.5528L163.856 88.3029L75.5528 176.606H0L88.3029 88.3029Z"
+                    fill="#F0810F" />
+
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="164" height="177" viewBox="0 0 164 177" fill="none">
+                <path d="M88.3029 88.3029L0 0H75.5528L163.856 88.3029L75.5528 176.606H0L88.3029 88.3029Z"
+                    fill="#F0810F" />
+
+            </svg>
+        </div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" width="164" height="177" viewBox="0 0 164 177" fill="none">
+                <path d="M88.3029 88.3029L0 0H75.5528L163.856 88.3029L75.5528 176.606H0L88.3029 88.3029Z"
+                    fill="#F0810F" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="164" height="177" viewBox="0 0 164 177" fill="none">
+                <path d="M88.3029 88.3029L0 0H75.5528L163.856 88.3029L75.5528 176.606H0L88.3029 88.3029Z"
+                    fill="#F0810F" />
+
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="164" height="177" viewBox="0 0 164 177" fill="none">
+                <path d="M88.3029 88.3029L0 0H75.5528L163.856 88.3029L75.5528 176.606H0L88.3029 88.3029Z"
+                    fill="#F0810F" />
+
+            </svg>
+        </div>
+    </div>
+    <div id="topics">
+        <p>SCHEDULE</p>
+        <div>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>What WEB 3.0 MEANS FOR ENTERPRISES - Sunny Lu</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>VALUE CREATION IN THE METAVERSE - Gracy Chen</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>THE ROLE OF STABLECOINS IN A DECENTRALIZED ECOSYSTEM - Nena Dokuzov & Jean Charles Gaudechon</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>DAOS: NEW BREED OF INTERNET-NATIVE ORGANIZATIONS - Max Kordek</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>MAXIMIZING ESG IMPACT WITH BLOCKCHAIN - Helen Hai</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>BRIDGING DEFI AND CEFI - Jason Allegrante</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>WEB 3 GAMING: THE NEW FRONTIER? - Sunny Lu</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>DECRYPTING THE REGULATORY LANDSCAPE OF VIRTUAL ASSETS - Reece Merrick</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>CENTRAL BANK DIGITAL CURRENCIES, AND CROSS-BORDER PAYMENTS - Mohammed Alblooshi</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>WEB 3: THE FUTURE IS HERE AND NOW - Sunny Lu</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p>NFT MARKET OVERVIEW: TRENDS & OPPORTUNITIES - Alex Zinder & Nicole Purin</p>
+            <img src="./public/images/line.svg" alt="line" />
+            <p style="margin-bottom: 0; padding-bottom: 50px;">INTEROPERABILITY - CHALLENGES AND OPPORTUNITIES - Dina
+                Sam'an</p>
+        </div>
+    </div>
+    <div id="intersection-gradient">
+        <h1>OUR SPEAKERS</h1>
+    </div>
+    <div id="gridbg">
+        <div id="grid-container-wrapper">
+            <div id="speakers">
+                <div class="speaker">
+                    <img src="./public/images/sunny-lu.png" alt="Sunny Lu">
+                    <p>Sunny Lu</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/helen-hai.png" alt="Helen Hai">
+                    <p>Helen Hai</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/alex-zinder.png" alt="Alex Zinder">
+                    <p>Alex Zinder</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/gracy-chen.png" alt="Gracy Chen">
+                    <p>Gracy Chen</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/mohammed-alblooshi.png" alt="Mohammed Alblooshi">
+                    <p>Mohammed Alblooshi</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/max-kordek.png" alt="Max Kordek">
+                    <p>Max Kordek</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/nena-dokuzov.png" alt="Nena Dokuzov">
+                    <p>Nena Dokuzov</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/reece-merrick.png" alt="Reece Merrick">
+                    <p>Reece Merrick</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/dina-saman.png" alt="Dina Sam'an">
+                    <p>Dina Sam'an</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/jean-charles-gaudechon.png" alt="Jean Charles-Gaudechon">
+                    <p>Jean Charles-Gaudechon</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/nicole-purin.png" alt="Nicole Purin">
+                    <p>Nicole Purin</p>
+                </div>
+                <div class="speaker">
+                    <img src="./public/images/jason-allegrante.png" alt="Jason Allegrante">
+                    <p>Jason Allegrante</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="div-gridcontainer-sponsor">
+        <h1>SPONSORS</h1>
+        <div id="sponsors">
+            <a href="https://woodstockfund.com/" target="_blank">
+                <div class="sponsor-frame-front"><img src="./public/images/woodstock-fund.png" alt="woodstock-fund">
+                </div>
+            </a>
+            <a href="https://wegrowwithc3.com/" target="_blank">
+                <div class="sponsor-frame-front"><img src="./public/images/c-3.png" alt="c-3"></div>
+            </a>
+            <a href="https://annexinvestments.com/" target="_blank">
+                <div class="sponsor-frame-front"><img src="./public/images/annex-investments.png"
+                        alt="annex-investments">
+                </div>
+            </a>
+            <a href="https://momentum6.com/" target="_blank">
+                <div class="sponsor-frame-front"><img src="./public/images/momentum.png" alt="momentum"></div>
+            </a>
+            <a href="https://888vc.co/" target="_blank">
+                <div class="sponsor-frame-front"><img src="./public/images/vc.png" alt="vc"></div>
+            </a>
+            <a href="https://dsainvestments.com/" target="_blank">
+                <div class="sponsor-frame-front"><img src="./public/images/dsa-investments.png" alt="dsa-investments">
+                </div>
+            </a>
+            <a href="https://tykheblock.ventures/" target="_blank">
+                <div class="sponsor-frame-front"><img src="./public/images/tykhe-block-ventures.png"
+                        alt="tykhe-block-ventures" /></div>
+            </a>
+            <a href="https://18ventures.co/" target="_blank">
+                <div class="sponsor-frame-front"><img src="./public/images/ventures.png" alt="ventures"></div>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div></div>
+        <p>© 2023 Crypto Meeting Expo | All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>

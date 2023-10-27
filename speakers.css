@@ -1,0 +1,95 @@
+#speakers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+#grid-container-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+#intersection-gradient {
+  background: linear-gradient(180deg, #2F3131 0%, #111325 81.77%, rgba(17, 19, 37, 0.0) 100%);
+  text-align: center;
+  font-family: Russo One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 210%;
+  text-transform: uppercase;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  color: white;
+}
+
+#intersection-gradient>h1 {
+  margin: 0;
+  height: 150px;
+}
+
+#gridbg {
+  width: 100%;
+  background-image: url('./public/images/bg.png');
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: 35px;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgba(217, 217, 217, 0.90);
+  border-radius: 25px;
+  max-width: 200px;
+  transition: transform 0.3s; /* Add a transition for smooth scaling effect */
+  position: relative; /* Add a relative position for the speaker div */
+}
+
+.speaker img {
+  max-width: 100%;
+}
+
+.speaker p {
+  font-size: 24px;
+  color: black;
+  font-family: Work Sans;
+  font-weight: 700;
+  margin-top: 10px;
+  pointer-events: none; /* Prevent the cursor from changing when hovering over the text */
+}
+
+/* Apply scale transform on hover to make the div bigger */
+.speaker:hover {
+  transform: scale(1.03); /* Adjust the scale factor as desired */
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 1024px) {
+  /* For screens with a max width of 1024px */
+  #grid-container-wrapper {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For screens with a max width of 768px */
+  #speakers {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For screens with a max width of 480px */
+  #speakers {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}

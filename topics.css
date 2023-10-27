@@ -1,0 +1,76 @@
+/* Styles for screens larger than or equal to 960px */
+
+
+/* Styles for screens smaller than 960px */
+@media (max-width: 1025px) {
+    #intersection-arrows {
+        display: none;
+    }
+
+    #topics {
+        background-color: #2F3131;
+        text-align: center;
+        font-family: DM Sans;
+        font-size: 25px;
+        color: #F8F1E5;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 210%;
+    }
+
+    #topics>p {
+        color: #F0810F;
+        text-align: center;
+        font-family: Catamaran;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+    }
+
+    #topics>div>img {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1026px) {
+    #intersection-arrows {
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 5.8077rem;
+    }
+
+    #topics {
+        background-color: #2F3131;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding-top: 10rem;
+    }
+
+    #topics>p {
+        color: #F0810F;
+        text-align: right;
+        font-family: Catamaran;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: -0.64px;
+        transform: rotate(-90deg);
+    }
+
+    #topics>div>p {
+        margin: 0;
+        color: #F8F1E5;
+        font-family: DM Sans;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 210%;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+}
